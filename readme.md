@@ -1,8 +1,5 @@
 Report on Python Program for Data Analysis
 
-
-
-
 1. Introduction:
 The Python program developed for DataTech Solutions aims to analyze employee data using various data structures and functions. The program allows users to perform tasks such as displaying employee information, calculating average salary, analyzing department-wise salary distribution, identifying high-experience employees, and updating employee salaries.
 
@@ -44,7 +41,8 @@ Functions are modularized to perform specific tasks, promoting code reusability 
 Error handling mechanisms are incorporated to handle invalid inputs and ensure robustness.
 The program follows Python best practices, including descriptive variable names, proper indentation, and inline comments for clarity.
 
-Sudo Code.
+Algorithm (Pseudocode):
+
     1. Load Data:
        - Manually create a list of dictionaries to represent the dataset.
     
