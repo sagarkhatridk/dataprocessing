@@ -1,5 +1,8 @@
 Report on Python Program for Data Analysis
 
+
+
+
 1. Introduction:
 The Python program developed for DataTech Solutions aims to analyze employee data using various data structures and functions. The program allows users to perform tasks such as displaying employee information, calculating average salary, analyzing department-wise salary distribution, identifying high-experience employees, and updating employee salaries.
 
@@ -40,6 +43,46 @@ Data structures are used to represent the employee dataset and store information
 Functions are modularized to perform specific tasks, promoting code reusability and maintainability.
 Error handling mechanisms are incorporated to handle invalid inputs and ensure robustness.
 The program follows Python best practices, including descriptive variable names, proper indentation, and inline comments for clarity.
+
+Sudo Code.
+    1. Load Data:
+       - Manually create a list of dictionaries to represent the dataset.
+    
+    2. Display Employee Information:
+       - Function display_employee_info(employee_id):
+           - Iterate through the list of dictionaries.
+           - If employee_id matches any Employee ID in the dataset:
+               - Display Employee Name, Department, Salary, and Years of Experience.
+           - If employee_id is not found, display a message indicating the absence.
+    
+    3. Calculate Average Salary (Algorithm 1):
+       - Function calculate_average_salary():
+           - Calculate total_salary as the sum of all salaries in the dataset.
+           - Calculate average_salary as total_salary divided by the number of employees.
+           - Display the average salary of all employees.
+    
+    4. Department-wise Salary Distribution (Algorithm 2):
+       - Function department_wise_salary_distribution():
+           - Create empty dictionaries to store total salary and employee count for each department.
+           - Iterate through the dataset:
+               - If department already exists in dictionaries, update total salary and employee count.
+               - If department doesn't exist, initialize it with current salary and employee count.
+           - Calculate average salary for each department.
+           - Display department-wise salary distribution with total employees and average salary.
+    
+    5. Identify High Experience Employees:
+       - Function identify_high_experience_employees():
+           - Iterate through the dataset:
+               - If years of experience > 10, append employee name and department to a list.
+           - Display the names and departments of high-experience employees.
+    
+    6. Update Employee Salary:
+       - Function update_employee_salary(employee_id, new_salary):
+           - Iterate through the dataset:
+               - If employee_id matches, update the salary with new_salary.
+           - Display a message confirming the salary update.
+
+
 5. Areas for Improvement:
 While the program fulfills the basic requirements, several areas could be improved for enhanced functionality and usability:
 
