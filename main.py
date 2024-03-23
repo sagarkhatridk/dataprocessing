@@ -66,6 +66,12 @@ def update_employee_salary(employee_id, new_salary):
         if employee["Employee ID"] == employee_id:
             employee["Salary"] = new_salary
             print("Salary updated successfully for Employee ID:", employee_id)
+            print("Employee ID:", employee["Employee ID"])
+            print("Employee Name:", employee["Employee Name"])
+            print("Department:", employee["Department"])
+            print("Salary:", employee["Salary"])
+            print("Years of Experience:", employee["Years of Experience"])
+            
             return
     print("Employee ID not found.")
 
